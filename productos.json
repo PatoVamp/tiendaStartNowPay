@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nombre": "Laptop Gamer",
+        "precio": 1200,
+        "imagen": "https://www.asus.com/media/Odin/Websites/global/ProductLine/20200824120814.jpg?webp",
+        "descripcion": "Laptop de alto rendimiento para juegos y trabajo."
+    },
+    {
+        "id": 2,
+        "nombre": "Auriculares Inalámbricos",
+        "precio": 80,
+        "imagen": "https://expocolsuministros.com/wp-content/uploads/2024/06/Product_20210928102203338414098.png",
+        "descripcion": "Auriculares con cancelación de ruido y gran calidad de sonido."
+    },
+    {
+        "id": 3,
+        "nombre": "Smartphone 5G",
+        "precio": 900,
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_836017-MLU78891585728_092024-O.webp",
+        "descripcion": "Última tecnología en conectividad móvil con pantalla OLED."
+    },
+    {
+        "id": 4,
+        "nombre": "Monitor UltraWide",
+        "precio": 500,
+        "imagen": "https://m.media-amazon.com/images/I/71hkJw8mQiL._AC_SX466_.jpg",
+        "descripcion": "Monitor de 34 pulgadas con resolución QHD y 144Hz de refresco."
+    },
+    {
+        "id": 5,
+        "nombre": "Mesa Gamer UltimaX",
+        "precio": "700",
+        "imagen": "https://cdnx.jumpseller.com/tienda-gamer-medellin/image/50411651/1-26.jpg?1720300897",
+        "descripcion": "Mesa Ultimo Modelo, tallado con abedul. lorem ipsum."
+    }
+]
