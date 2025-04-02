@@ -39,6 +39,10 @@ app.get("/style", (req, res) => {
     res.sendFile(process.cwd() + '/public/style.css');
 })
 
+app.get("/register", (req, res) => {
+    res.sendFile(process.cwd() + '/public/html/register.html');
+})
+
 app.get("/script", (req, res) => {
     res.sendFile(process.cwd() + '/public/script.js');
 })
