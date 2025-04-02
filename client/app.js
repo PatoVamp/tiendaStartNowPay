@@ -39,8 +39,8 @@ app.get("/style", (req, res) => {
     res.sendFile(process.cwd() + '/public/style.css');
 })
 
-app.get("/register", (req, res) => {
-    res.sendFile(process.cwd() + '/public/html/register.html');
+app.get("/js/login", (req, res) => {
+    res.sendFile(process.cwd() + '/public/js/login.js');
 })
 
 app.get("/script", (req, res) => {
@@ -49,6 +49,10 @@ app.get("/script", (req, res) => {
 
 app.get("/productos", (req, res) => {
     res.sendFile(process.cwd() + '/productos.json');
+})
+
+app.get("/register", (req, res) => {
+    res.sendFile(process.cwd() + '/public/html/register.html');
 })
 
 // CREAR USUARIO

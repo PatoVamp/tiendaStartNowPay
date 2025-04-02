@@ -78,11 +78,36 @@ body {
 .flex-container {
     display: flex;
     margin-top: 56px;
-    height: 450px;
+    height: 650px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+.div-sect {
+    display: grid;
+    grid-template-columns: 2fr 2fr; /* Izquierda más pequeña, derecha más grande */
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.columna-izquierda, .columna-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+label {
+    font-weight: bold;
+    color: #393939;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
 
 #register-form {
     display: flex;
@@ -95,7 +120,8 @@ body {
 .register-text {
     text-align: center;
     margin-top: 20px; 
-    color: black
+    color: black;
+    font-weight: bold;
 }
 
 button {
