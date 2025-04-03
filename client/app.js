@@ -5,6 +5,7 @@ import { url } from 'inspector';
 import dotenv from 'dotenv'
 import { ok } from 'assert';
 
+
 dotenv.config()
 export const turso = new createClient({
     url:process.env.TURSO_URL,
@@ -39,6 +40,10 @@ app.get("/style", (req, res) => {
     res.sendFile(process.cwd() + '/public/style.css');
 })
 
+app.get("/style/login", (req, res) => {
+    res.sendFile(process.cwd() + '/public/style/login.css');
+})
+
 app.get("/js/login", (req, res) => {
     res.sendFile(process.cwd() + '/public/js/login.js');
 })
@@ -49,6 +54,10 @@ app.get("/script", (req, res) => {
 
 app.get("/productos", (req, res) => {
     res.sendFile(process.cwd() + '/productos.json');
+})
+
+app.get("/home", (req, res) => {
+    res.sendFile(process.cwd() + '/public/index.html');
 })
 
 app.get("/register", (req, res) => {

@@ -16,7 +16,7 @@ function mostrarProductos(productos) {
                 <h2><a href="#">${producto.nombre}</a></h2>
                 <p>${producto.descripcion}</p>
                 <span class="precio">$${producto.precio}</span>
-                <button>Agregar al carrito</button>
+                <button class="agregar-carrito" data-id="${producto.id}">Agregar al carrito</button>
             </div>
         `;
         contenedor.innerHTML += productoHTML;
