@@ -15,7 +15,7 @@
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 360px;
+    width: 390px;
     text-align: center;
     height: 530px;
     color: black;
@@ -43,17 +43,19 @@
 }
 
 .form-login-btn {
-    background-color: #77ff5f;
+    background-color: #71f05b;
     padding: 10px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    margin-bottom: 16px;
     height: 42px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .form-login-btn:hover {
-    background-color: #51ce32;
+    background-color: #6ee73a;
 }
 
 .form-login-separador {
@@ -65,25 +67,49 @@
     margin: 6px 0;
     height: 42px;
 }
+#usuario, #password, ::selection {
+    outline-color: #54b32c;
+}
 
 .separador {
     border-bottom: 1px solid #ccc;
 }
 
 .olv-pass {
+    display: inline;
+    margin-top: 14px;
+    color: #5d5d5d;
+}
+
+.register-center {
     margin-top: 10px;
+    display: grid;
+    place-content: center;
 }
 
 .register-text {
     color: gray;
-    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    height: 36px;
+    text-align: center;
+    width: 200px;
+    place-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.register-text:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    border: 2px solid #1f1f1f;
+    color: #1f1f1f;
 }
 
 .gsi-material-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: WHITE;
+    background-color: white;
     border: 1px solid #747775;
     border-radius: 4px;
     box-sizing: border-box;

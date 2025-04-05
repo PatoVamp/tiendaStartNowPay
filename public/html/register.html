@@ -8,41 +8,50 @@
 </head>
 <body>
     <main class="container">
-        <section class="left-section">
-            <h1>Crear tu cuenta gratuita</h1>
-            <p>Explora todas las funciones de nuestra plataforma para individuos y empresas.</p>
-        </section>
-        <section class="right-section">
-            <h2>Regístrate</h2>
-            <form id="register-form">
-                <label for="username">Usuario</label>
-                <input type="text" id="username" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" required>
-                
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" required>
-                <small>Debe tener al menos 8 caracteres, incluyendo un número y una letra minúscula.</small>
-                
-                <label for="pais">País</label>
-                <select id="pais" required>
-                    <option value="">Selecciona tu país</option>
-                    <option value="colombia">Colombia</option>
-                    <option value="mexico">México</option>
-                    <option value="espana">España</option>
-                </select>
-                
-                <div class="checkbox-container">
-                    <input type="checkbox" id="updates">
-                    <label for="updates">Recibir actualizaciones y anuncios ocasionales</label>
-                </div>
-                
-                <button type="submit">Continuar</button>
-                <p>Al registrarte, aceptas nuestros <a href="#">Términos de Servicio</a>.</p>
-            </form>
-        </section>
+        <div class="main">
+            <img src="../assets/picregister.jpg" alt="register-pic">
+        </div>
+        
+        <div class="overlay">
+            <p class="login">
+                ¿Ya tienes una cuenta? <a href="#">Inicia sesión</a>
+            </p>
+            <section class="left-section">
+                <h1>Crear tu cuenta gratuita</h1>
+                <p class="small">Explora todas las funciones de nuestra plataforma para individuos y empresas.</p>
+            </section>
+            <section class="right-section">
+                <h2 class="t1-register">Regístrate</h2>
+                <form id="register-form">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="usernameRegister" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="emailRegister" required>
+                    
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="passwordRegister" required>
+                    <small class="small">Debe tener al menos 8 caracteres, incluyendo un número y una letra minúscula.</small>
+                    
+                    <label for="pais">País</label>
+                    <select id="pais" required>
+                        <option value="">Selecciona tu país</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="mexico">México</option>
+                        <option value="espana">España</option>
+                    </select>
+                    
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="updates">
+                        <label class="checkbox-label" for="updates">Recibir actualizaciones y anuncios ocasionales</label>
+                    </div>
+                    
+                    <button class="button-register" type="submit">Continuar</button>
+                    <p class="terms">Al registrarte, aceptas nuestros <a href="#">Términos de Servicio</a>.</p>
+                </form>
+            </section>
+        </div>
     </main>
-    <script src="/js/login.js"></script>
+    <script src="/js/login"></script>
 </body>
 </html>

@@ -1,10 +1,5 @@
 const modalLogin = document.createElement("div");
 
-const linkBootstrapIcons = document.createElement("link");
-linkBootstrapIcons.rel = "stylesheet";
-linkBootstrapIcons.href = "/assets/bootstrap-icons/bootstrap-icons.css";
-document.head.appendChild(linkBootstrapIcons);
-
 const link = document.createElement("link");
 link.rel = "stylesheet";
 link.href = "/style/login";
@@ -25,8 +20,9 @@ modalLogin.innerHTML = `
             <input type="password" id="password" class="form-login-input" required>
             
             <button type="submit" class="form-login-btn">Ingresar</button>
+            <a class="olv-pass" href="#">¿Has olvidado la Contraseña?</a>
             
-            <button class="gsi-material-button" style="width:40">
+            <div class="gsi-material-button" style="width:40">
                 <div class="gsi-material-button-state"></div>
                 <div class="gsi-material-button-content-wrapper">
                     <div class="gsi-material-button-icon">
@@ -41,13 +37,12 @@ modalLogin.innerHTML = `
                     <span class="gsi-material-button-contents">Sign in with Google</span>
                     <span style="display: none;">Sign in with Google</span>
                 </div>
-            </button>
+            </div>
 
             <hr class="form-login-separador"> <!-- Separador -->
-            
-            <p class="olv-pass">¿Has olvidado la Contraseña?</p> 
-            <a href="#">Recuperar Contraseña</a>
-            <a class="register-text" href="/register">Crear una cuenta</a>
+            <div class="register-center">
+                <a class="register-text" href="/register">Crear una cuenta</a>
+            </div>
         </form>
     </div>
 `;
@@ -63,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnLogin = document.querySelector(".login a");
     const btnCerrar = document.querySelector(".cerrar");
     const loginForm = document.getElementById("login-form");
-    const googleLoginBtn = document.getElementById("google-login");
 
     btnLogin.addEventListener("click", (e) => {
         e.preventDefault();
@@ -79,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
             modalLogin.style.display = "none";
         }
     });
-
+    
     loginForm.addEventListener("submit", (e) => {
         e.preventDefault();
         
@@ -95,9 +89,5 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             alert("Usuario o contraseña incorrectos");
         }
-    });
-
-    googleLoginBtn.addEventListener("click", () => {
-        window.location.href = "/auth/google"; // Redirigir a la autenticación de Google
     });
 });
