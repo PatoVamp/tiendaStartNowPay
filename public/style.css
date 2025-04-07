@@ -24,7 +24,7 @@ body {
 }
 
 .inicio {
-    color: #393939;
+    color: #589e47;
     text-decoration: none;
     font-size: 28px;
     margin: 0 48px;
@@ -36,11 +36,12 @@ body {
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
-    gap: 20px;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
 }
 
 .nav-links li {

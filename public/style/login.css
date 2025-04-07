@@ -153,3 +153,22 @@
 .gsi-material-button:disabled .gsi-material-button-icon {
     opacity: 38%;
 }
+
+.perfil {
+    display: flex; 
+    align-items: center;
+    color: #474747;
+}
+
+.perfil-icon {
+    width: 30px; 
+    height: 30px; 
+    background-color: limegreen; 
+    border-radius: 50%; 
+    color: white; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 14px;
+}
+

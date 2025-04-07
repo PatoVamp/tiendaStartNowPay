@@ -1,0 +1,4 @@
+[
+    { "nombre": "Pato", "password": "patovamp","estaLogeado": true},
+    {"nombre": "admin", "password": "1234","estaLogeado": true}
+]
